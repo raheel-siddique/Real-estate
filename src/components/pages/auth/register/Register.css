@@ -1,0 +1,11 @@
+.forpassword::placeholder{
+    /* color: red; */
+    /* background-color: aquamarine; */
+    font-family: 'Times New Roman', Times, serif;
+}
+#ownname{
+    outline: none;
+}
+textarea:focus, input:focus{
+   border: 1px solid yellow
+}

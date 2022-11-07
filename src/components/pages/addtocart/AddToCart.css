@@ -1,0 +1,50 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.tokeninptfld{
+  border: 1px solid rgb(223, 221, 221);
+  outline:none;
+  height: 40px;
+  width: 100px;
+  /* border-radius: 30px; */
+  text-indent: 40px;
+}
+.icbtn{
+  background-color: #212529;
+  color: white;
+  height: 40px;
+  width: 40px;
+  font-size: 15px;
+  
+}
+.tokeninptfld::placeholder{
+  color: rgb(252, 161, 161);
+  padding: 5px;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+.cartemptyhead{
+  font-size: 15px;
+  color: #f9f9f9;
+  padding: 10px;
+  font-weight: lighter;
+  background-color: #156cab!important;
+  /* background-color: #FF5A3C; */
+}
+.cartemptyloginbtn{
+  border-radius: 30px;
+}
+/* .cartimg{
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+} */
+@media (max-width: 767px) {
+       .btnaddtocart{
+        text-align: center;
+       }
+ 
+} 

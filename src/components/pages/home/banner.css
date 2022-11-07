@@ -1,0 +1,17 @@
+/* .forImage{
+    background-image: url("\hero-block-stacking.png");
+} */
+.img-fluid.banner-img{
+    position: relative;
+    max-width: 450px !important;
+    bottom: 60px;
+    right: 100px;
+}
+@media (max-width: 767px) {
+    .img-fluid.banner-img{
+        position: relative;
+        max-width: 330px !important;
+        left: 5px;
+        top: 5px;
+    }
+}

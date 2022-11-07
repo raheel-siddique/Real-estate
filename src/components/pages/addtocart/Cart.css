@@ -1,0 +1,146 @@
+
+#mineidcheck{
+    position: relative;
+    left: 300px;
+}
+.productsclass{
+    background-color: rgb(252, 251, 251);
+}
+.maindivs{
+    background-color: rgb(234, 242, 247);
+}
+.maincontainerforadddress{
+    background-color: rgb(255, 255, 255);
+    height: 360px;
+    border: 1px solid rgb(218, 217, 217);
+}
+.incbtnofcart{
+    background-color:#212529;
+    color: white;
+    font-size: medium;
+    width: 30px;
+    height: 30px;
+}
+.listadrerssdetails{
+    list-style-type: none;
+}
+.tdborderremove{
+    border: 0px solid;
+}
+/* .tableheading{
+
+} */
+
+@media (max-width: 600px) {
+
+    .head1eampty{
+        width: 2px;
+        display: none;
+        font-size: 10px;
+       }
+    /* .tableheading{
+     
+       color: red;
+       display:inline-flex;
+       overflow:scroll;
+       font-size: small;
+    }
+    .tablebody{
+        display: flex;
+        justify-content: space-around;
+    }
+    .cart-product-remove{
+        width: 1000px;
+    }
+    .td2{
+        width: 1000px;
+    }
+    .td3{
+        width: 1000px;
+    }
+    .td4{
+        width: 1000px;
+    }
+    .td5{
+        width: 1000px;
+    } */
+
+}
+@media (max-width: 767px) {
+    .mbdevbtn{
+        /* background-color: blue; */
+        width: 360px;
+       
+        text-align: center;
+        font-size: large;
+        
+    
+   
+    }
+    .textbtn{
+        text-align: center;
+    }
+   .dropdowncheckout{
+    width: 400px;
+   }
+   .head1eampty{
+    width: 0px;
+   }
+   .jhxjh{
+    width: 10px;
+    font-size: 12px;
+    size: 0ch;
+   }
+   .head3{
+    width: 5px;
+    font-size: 12px;
+   }
+   .head4{
+    width: 10px;
+    font-size: 12px;
+   }
+   .head5{
+    width: 10px;
+    font-size: 12px;
+   }
+   .head6{
+    width: 10px;
+    font-size: 12px;
+   }
+   .head7{
+    width: 10px;
+    font-size: 12px;
+   }
+   .span{
+    width: 30px;
+    height: 20px;
+    font-size: 10px;
+   }
+   .jdfjf{
+    width: 20px;
+   }
+   .imgcart{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+   }
+  
+   .itensmy{
+    font-size: 10px;
+   }
+   .incbtnofcart{
+    width: 20px;
+   }
+   .cart-product-quantity{
+    width: 10px;
+    font-size: 10px;
+   }
+} 
+@media (min-width: 100px) {
+   
+   .dropdowncheckout{
+    width: 53%;
+   }
+  
+} 

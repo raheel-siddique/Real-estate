@@ -1,0 +1,39 @@
+.headofbanner{
+    /* font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif; */
+    font-size: 20px;
+    text-transform: capitalize;
+    word-spacing: 3px;
+    
+    
+}
+.paraofbanner{
+    color: black;
+    width: 500px;
+}
+.bannerpara1{
+   color:  #156cab !important;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 1.1em;
+
+}
+.btnofbanner{
+    background-color: #0d6efd;
+    border-radius: 30px;
+
+    /* border-radius: 30px; */
+}
+.btnofbanner:hover{
+    background-color: black;
+    color: white;
+}
+.imgofbanner{
+    position: relative;
+    right: 100px;
+    bottom: 60px;
+}
+
+.underlineofnavbar{
+    border-bottom: 1px solid rgb(206, 203, 203);
+    height: 100px;
+}

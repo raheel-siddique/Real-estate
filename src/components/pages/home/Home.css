@@ -1,0 +1,27 @@
+
+
+@media (max-width: 767px) {
+    .tokenstext{
+        text-align: center;
+        /* width: 100px; */
+        /* background-color:rebeccapurple; */
+        overflow-x: hidden;
+        
+    }
+    .tokenstext1{
+        text-align: center;
+        /* width: 100px; */
+        /* background-color:rebeccapurple; */
+        overflow-x: hidden;
+        
+    }
+    .fmbdevice{
+        font-size: 10px;
+        color: red;
+    }
+    .forcolordivmbdev{
+        background-color: rgb(101, 181, 250);
+      
+    }
+   
+} 
