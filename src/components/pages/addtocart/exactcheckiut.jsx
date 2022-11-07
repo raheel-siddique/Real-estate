@@ -8,9 +8,9 @@ import { useGetCartItemsQuery } from "../../../services/addtocart";
 import { useSelector } from "react-redux";
 import { useAddCheckoutDataMutation } from "../../../services/checkout";
 import { toast } from "react-toastify";
-// import { COUNTRIES } from "../../../components/commoncomponents/countries";
+import { COUNTRIES } from "../../../components/commoncomponents/countries";
 import "./Cart.css";
-// import DropDown from "../../shop-components/DropDown";
+import DropDown from "../../shop-components/DropDown";
 import { useGetCurrentUserQuery } from "../../../services/auth";
 
 const Checkout = () => {
@@ -134,61 +134,151 @@ const Checkout = () => {
   {
     control:'input',
     type:"text",
-    nameOFName:'lastName',
-    placeholderText:'Last Name',
+    nameOFName:'firstName',
+    placeholderText:'First Name',
     boxClass:'col-md-6',
     inputBoxClass:"input-item input-item-name ltn__custom-icon",
    },
 
    {
     control:'input',
-    type:"email",
-    nameOFName:'emailAddress',
-    placeholderText:'Email',
-    boxClass:'col-md-6',
-    inputBoxClass:"input-item input-item-email ltn__custom-icon",
-   },
-   {
-    control:'input',
     type:"text",
-    nameOFName:'contact',
-    placeholderText:'Contact',
-    boxClass:'col-md-6',
-    inputBoxClass:"input-item input-item-phone ltn__custom-icon",
-   },
-   {
-    control:'input',
-    type:"text",
-    nameOFName:'companyName',
-    placeholderText:'Company name (optional)',
-    boxClass:'col-md-6',
-    inputBoxClass:"input-item input-item-website ltn__custom-icon",
-   },
-   {
-    control:'input',
-    type:"text",
-    nameOFName:'companyAddress',
-    placeholderText:'Company address (optional)',
+    nameOFName:'firstName',
+    placeholderText:'First Name',
     boxClass:'col-md-6',
     inputBoxClass:"input-item input-item-name ltn__custom-icon",
    },
    {
     control:'input',
     type:"text",
-    nameOFName:'homeAddress',
-    placeholderText:'House number and street name',
+    nameOFName:'firstName',
+    placeholderText:'First Name',
     boxClass:'col-md-6',
-    inputBoxClass:"input-item",
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
    },
    {
-    control:'textarea',
-    type:"",
-    nameOFName:'orderNotes',
-    placeholderText:'Notes about your order, e.g. special notes for delivery',
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
     boxClass:'col-md-6',
-    inputBoxClass:"input-item input-item-textarea ltn__custom-icon",
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
    },
-   
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
+   {
+    control:'input',
+    type:"text",
+    nameOFName:'firstName',
+    placeholderText:'First Name',
+    boxClass:'col-md-6',
+    inputBoxClass:"input-item input-item-name ltn__custom-icon",
+   },
 
 ]
 
@@ -213,28 +303,21 @@ const Checkout = () => {
                         <div className="ltn__checkout-single-content-info">
                           <h6>Personal Information</h6>
                           <div className="row">
-                            {dataOfCheckoutPage?.map((values)=>{
-                              return (
-                                <>
-                                  <div className={values?.boxClass}>
-                              <div className={values.inputBoxClass}>
+                            <div className="col-md-6">
+                              <div className="input-item input-item-name ltn__custom-icon">
                                 <FormikControl
-                                  control={values.control}
-                                  type={values.type}
-                                  name={values.nameOFName}
+                                  control="input"
+                                  type="text"
+                                  name="firstName"
                                   disabled={
                                     userInfo?.data?.firstname ? "disabled" : ""
                                   }
                                   formik={formik}
-                                  placeholder={values.placeholderText}
+                                  placeholder="First name"
                                 />
                               </div>
                             </div>
-                                </>
-                              )
-                            })}
-                          
-                            {/* <div className="col-md-6">
+                            <div className="col-md-6">
                               <div className="input-item input-item-name ltn__custom-icon">
                                 <FormikControl
                                   control="input"
@@ -247,8 +330,8 @@ const Checkout = () => {
                                   placeholder="Last name"
                                 />
                               </div>
-                            </div> */}
-                            {/* <div className="col-md-6">
+                            </div>
+                            <div className="col-md-6">
                               <div className="input-item input-item-email ltn__custom-icon">
                                 <FormikControl
                                   control="input"
@@ -261,8 +344,8 @@ const Checkout = () => {
                                   placeholder="Email"
                                 />
                               </div>
-                            </div> */}
-                            {/* <div className="col-md-6">
+                            </div>
+                            <div className="col-md-6">
                               <div className="input-item input-item-phone ltn__custom-icon">
                                 <FormikControl
                                   control="input"
@@ -272,8 +355,8 @@ const Checkout = () => {
                                   placeholder="Contact"
                                 />
                               </div>
-                            </div> */}
-                            {/* <div className="col-md-6">
+                            </div>
+                            <div className="col-md-6">
                               <div className="input-item input-item-website ltn__custom-icon">
                                 <FormikControl
                                   control="input"
@@ -283,8 +366,8 @@ const Checkout = () => {
                                   placeholder="Company name (optional)"
                                 />
                               </div>
-                            </div> */}
-                            {/* <div className="col-md-6">
+                            </div>
+                            <div className="col-md-6">
                               <div className="input-item input-item-website ltn__custom-icon">
                                 <FormikControl
                                   control="input"
@@ -294,9 +377,9 @@ const Checkout = () => {
                                   placeholder="Company address (optional)"
                                 />
                               </div>
-                            </div> */}
+                            </div>
                           </div>
-                          {/* <div className="row">
+                          <div className="row">
                             <div className="col-lg-6">
                               <h6>Country</h6>
                               <div
@@ -384,17 +467,17 @@ const Checkout = () => {
                                 />
                               </div>
                             </div>
-                          </div> */}
+                          </div>
 
                           <h6>Order Notes (optional)</h6>
-                          {/* <div className="input-item input-item-textarea ltn__custom-icon">
+                          <div className="input-item input-item-textarea ltn__custom-icon">
                             <FormikControl
                               control="textarea"
                               name="orderNotes"
                               formik={formik}
                               placeholder="Notes about your order, e.g. special notes for delivery."
                             />
-                          </div> */}
+                          </div>
                         </div>
                       </div>
                     </div>

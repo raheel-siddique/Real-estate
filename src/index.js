@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./components/pages/home/Home";
 import Marketplace from "./components/pages/marketplace/Marketplace";
 import Propertydetails from "./components/pages/marketplace/Propertydetails";
@@ -40,7 +40,7 @@ const Root = () => {
   const [currentUser, { data, isSuccess }] = useLazyGetCurrentUserQuery();
   const reponseOfgetCartItems = useGetCartItemsQuery(data?.data?.id);
 
-  const [isAuthenticated, setIsAutheticated] = useState();
+const [setIsAutheticated] = useState();
 
   useEffect(() => {
     dispatch(getCartItems(reponseOfgetCartItems?.data));
@@ -89,16 +89,12 @@ const Root = () => {
           <Route exact path="/privacy-policy" component={PrivatePolicy} />
           <Route path="/error" exact component={ErrorPage} />
 
-          {token || isAuthenticated ? (
-            <>
+          
               <Route exact path="/checkout" component={Checkout} />
               <Route exact path="/order-confirm" component={OrderConfirm} />
               <Route exact path="/view-order/:id" component={ViewOrder} />
               <Route exact path="/myAccount" component={myAccountData} />
-            </>
-          ) : (
-            <Redirect to="/" />
-          )}
+          
         </Switch>
         <ToastContainer autoClose={1000} />
       </div>

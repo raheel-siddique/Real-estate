@@ -11,7 +11,7 @@ import LoginIcon from "@mui/icons-material/Login";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
 toast.configure();
-
+ 
 const AddToCart = ({ property }) => {
   const history = useHistory();
   const currentUser = useSelector((state) => state.user.userValue);
